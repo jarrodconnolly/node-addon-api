@@ -65,6 +65,7 @@ Object InitObjectReference(Env env);
 Object InitReference(Env env);
 Object InitVersionManagement(Env env);
 Object InitThunkingManual(Env env);
+Object InitGlobal(Env env);
 
 Object Init(Env env, Object exports) {
 #if (NAPI_VERSION > 5)
@@ -137,6 +138,7 @@ Object Init(Env env, Object exports) {
   exports.Set("reference", InitReference(env));
   exports.Set("version_management", InitVersionManagement(env));
   exports.Set("thunking_manual", InitThunkingManual(env));
+  exports.Set("global", InitGlobal(env));
   return exports;
 }
 
