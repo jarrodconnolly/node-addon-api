@@ -24,6 +24,7 @@
         'error.cc',
         'external.cc',
         'function.cc',
+        'global.cc',
         'handlescope.cc',
         'memory_management.cc',
         'name.cc',
